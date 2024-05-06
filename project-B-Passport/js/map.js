@@ -3,7 +3,7 @@ let currentImageIndex = 0; // Index of the current image
 let blendAmount = 0; // Blending amount between current and next image
 
 function preload() {
-    // Load your map images here
+    // Load map images here
     for (let i = 1; i <= 11; i++) { 
       let img = loadImage(`map/image_${i}.png`);
       mapImages.push(img);
