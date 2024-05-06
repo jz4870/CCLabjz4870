@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../materials/white.jpg);
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: grid; /* positions the next and back buttons */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 8% 1fr 12%;
+  height: 100vh;
+  max-width: 100%;
+}
+
+h1 {
+  color: rgb(93, 23, 23);
+  font-family: myFont, serif;
+  font-weight: 100;
+  font-size: 30px; 
+}
+
+h2{
+  text-align: center;
+  color: rgb(93, 23, 23);
+  font-family: myFont, serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+@font-face{
+  font-family: myFont;
+  src: url(../materials/font.ttf);
+}
+
+#contents{
+  position: absolute;
+  left: -15%;
+  top: 60%;
+  transform: translate(62.5%, -50%);
+  width: 30%;
+  min-width: 200px;
+  height: 68%;
+  min-height: 100px;
+  font-family: myFont, serif;
+  font-weight: normal;
+  color: rgb(93, 23, 23);
+  background-image: url('../materials/white.jpg')
+  border-radius: 10px;
+  font-size: 45px; 
+}
+
+#p5CanvasContainer1 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+#p5CanvasContainer2 {
+    position: absolute;
+    top: 55%; 
+    left: 75%; 
+    transform: translate(-50%, -50%);
+  }

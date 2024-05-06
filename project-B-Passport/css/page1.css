@@ -1,0 +1,161 @@
+html,
+body {
+  height: 100%;
+  overflow:hidden;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../materials/page1.png);
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  
+
+display:grid; /* positions the next and back buttons */
+grid-template-columns: 10% 1fr 10%;
+grid-template-rows: 8% 1fr 12%;
+height: 100vh;
+max-width: 100%;
+}
+
+
+.allimages {
+  position: absolute;
+}
+
+#dancers{
+  position: absolute;
+  left: 62%;
+  top: 52%;
+  transform: translate(-50%,50);
+  z-index: 0;
+
+}
+
+#dancers:hover {
+  box-shadow: 0 0 50px 20px rgba(117, 76, 76, 0.601);
+}
+
+#pierogi{
+  position: absolute;
+  left: 52%;
+  top: 13%;
+  transform: translate(-50%,50);
+  z-index: 0;
+}
+
+#vodka{
+  position: absolute;
+  left: 75%;
+  top: 19%;
+  transform: translate(-50%,50);
+  z-index: 0;
+}
+@font-face{
+  font-family: myFont;
+  src: url(../materials/font.ttf);
+}
+
+#canvasContainer {
+  display: block;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#next{
+  text-align: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ position: relative;
+ }
+ 
+ #previous{
+   text-align: center;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   position: relative;
+ }
+
+
+ #contents{
+  position: absolute;
+  left: -5%;
+  top: 60%;
+  transform: translate(62.5%, -50%);
+  width: 30%;
+  min-width: 200px;
+  height: 68%;
+  min-height: 100px;
+  font-family: myFont, serif;
+  font-weight: normal;
+  color: rgb(93, 23, 23);
+  background-image: url('../materials/white.jpg')
+  border-radius: 10px;
+  font-size: 45px; 
+}
+ .leftColumn{
+ 
+   width: 50%;
+   padding-left: 45px;
+   height: 80%;
+ }
+ 
+ .rightColumn{
+ width: 50%;
+ padding-right: 45px;
+ height: 80%;
+ }
+ 
+ h1{
+   text-align: center;
+   color: rgb(93, 23, 23);
+   font-family: myFont, serif;
+   font-weight: 100;
+   font-size: 35px;
+ 
+ }
+
+ h2{
+  text-align: center;
+  color: rgb(93, 23, 23);
+  font-family: myFont, serif;
+  font-weight: 100;
+  font-size: 30px;
+
+}
+
+
+#words{
+  position:absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.button{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+

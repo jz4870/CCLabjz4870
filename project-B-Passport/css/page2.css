@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100%;
+  overflow:hidden;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../materials/page2.png);
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  
+
+display:grid; /* positions the next and back buttons */
+grid-template-columns: 10% 1fr 10%;
+grid-template-rows: 8% 1fr 12%;
+height: 100vh;
+max-width: 100%;
+}
+
+h1{
+  color: rgb(93, 23, 23);
+  font-family: myFont, serif;
+  font-weight: 100;
+  font-size: 30px; 
+}
+
+#copernicus{
+  position: absolute;
+  left: 52%;
+  top: 13%;
+  transform: translate(-50%,50);
+  z-index: 0;
+}
+#copernicus:hover {
+  box-shadow: 0 0 50px 20px rgba(117, 76, 76, 0.601);
+}
+
+#marie{
+  position: absolute;
+  left: 75%;
+  top: 25%;
+  transform: translate(-50%,50);
+  z-index: 0;
+}
+#marie:hover {
+  box-shadow: 0 0 50px 20px rgba(117, 76, 76, 0.601);
+}
+
+#chopin{
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,50);
+  z-index: 0;
+}
+
+#chopin:hover {
+  box-shadow: 0 0 50px 20px rgba(117, 76, 76, 0.601);
+}
+@font-face{
+  font-family: myFont;
+  src: url(../materials/font.ttf);
+}
+
+#canvasContainer {
+  display: block;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#wrapper{
+display:grid;
+grid-template-columns: 10% 1fr 10%;
+grid-template-rows: 5% 1fr 10%;
+height: 100vh;
+max-width: 100%;
+}
+
+#next{
+ text-align: center;
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 2;
+ grid-row-end: 3;
+position: relative;
+}
+
+#previous{
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: relative;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+#contents{
+  position: absolute;
+  left: -5%;
+  top: 55%;
+  transform: translate(62.5%, -50%);
+  width: 30%;
+  min-width: 200px;
+  height: 68%;
+  min-height: 100px;
+  font-family: myFont, serif;
+  font-weight: normal;
+  color: rgb(93, 23, 23);
+  background-image: url('../materials/white.jpg')
+  border-radius: 10px;
+  font-size: 20px; 
+}
+
+
+.button{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

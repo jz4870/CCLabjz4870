@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  overflow:hidden;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../materials/white.jpg);
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  
+
+display:grid; /* positions the next and back buttons */
+grid-template-columns: 10% 1fr 10%;
+grid-template-rows: 8% 1fr 12%;
+height: 100vh;
+max-width: 100%;
+}
+
+h1{
+  color: rgb(93, 23, 23);
+  font-family: myFont, serif;
+  font-weight: 100;
+  font-size: 30px; 
+}
+
+h2{
+  text-align: center;
+  color: rgb(93, 23, 23);
+  font-family: myFont, serif;
+  font-weight: 100;
+  font-size: 40px;
+
+}
+@font-face{
+  font-family: myFont;
+  src: url(../materials/font.ttf);
+}
+
+#contents{
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  transform: translate(62.5%, -50%);
+  width: 40%;
+  min-width: 200px;
+  height: 68%;
+  min-height: 100px;
+  font-family: myFont, serif;
+  font-weight: normal;
+  color: rgb(93, 23, 23);
+  background-image: url('../materials/white.jpg')
+  border-radius: 10px;
+  font-size: 25px; 
+}
+
+#ramka {
+  position: absolute;
+  left: 51%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centering vertically and horizontally */
+  z-index: 0;
+}
+
+#p5CanvasContainer {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
